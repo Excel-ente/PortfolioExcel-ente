@@ -1,0 +1,82 @@
+<div class="row mt-lg-0 mt-8">
+    <div class="col-lg-6 mt-2" id="proyectosvba">
+        <h1 class="display-4 title"><i class="ni ni-app"></i> Proyectos VBA </h1>
+        {% for education in education %}
+    <div class="container py-2">
+        <!-- timeline item 1 -->
+        <div class="row">
+            <!-- timeline item 1 left dot -->
+            <div class="col-auto text-center flex-column d-sm-flex">
+                <div class="row h-50">
+                    <div class="col border-right">&nbsp;</div>
+                    <div class="col">&nbsp;</div>
+                </div>
+                <h5>
+                    <span class="badge text-white">{{education.the_year}}</span>
+                </h5>
+                <div class="row h-50">
+                    <div class="col border-right">&nbsp;</div>
+                    <div class="col">&nbsp;</div>
+                </div>
+            </div>
+            <!-- timeline item 1 event content -->
+            <div class="col py-2">
+                <a href="{{education.link}}" target="_blank" rel="noopener noreferrer">
+                    <div class="card education-card mirror-face">
+                        <div class="card-body">
+                            <h6 class="education-card-title">{{education.title}}</h6>
+                            <p class="education-card-desc">{{education.description}}</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--/row-->
+    </div>
+{% endfor %}
+
+
+
+
+        
+
+    </div>
+    <div class="col-lg-6 mt-2" id="proyectosvba">
+        <h1 class="display-4 title"> </h1>
+
+        {% for education in education %}
+        <div class="container py-2">
+            <!-- timeline item 1 -->
+            <div class="row">
+                <!-- timeline item 1 left dot -->
+                <div class="col-auto text-center flex-column d-sm-flex">
+                    <div class="row h-50">
+                        <div class="col border-right">&nbsp;</div>
+                        <div class="col">&nbsp;</div>
+                    </div>
+                    <h5>
+                        <span class="badge text-white">{{education.the_year}}</span>
+                    </h5>
+                    <div class="row h-50">
+                        <div class="col border-right">&nbsp;</div>
+                        <div class="col">&nbsp;</div>
+                    </div>
+                </div>
+                <!-- timeline item 1 event content -->
+                <div class="col py-2">
+                    <a href="{{education.link}}" target="_blank" rel="noopener noreferrer">
+                        <div class="card education-card mirror-face">
+                            <div class="card-body">
+                                <h6 class="education-card-title">{{education.title}}</h6>
+                                <p class="education-card-desc">{{education.description}}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--/row-->
+        </div>
+    {% endfor %}
+    
+    </div>
+</div>
