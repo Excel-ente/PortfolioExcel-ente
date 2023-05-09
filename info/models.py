@@ -52,6 +52,7 @@ class Experience(models.Model):
     title = models.CharField(max_length=50, blank=False, null=False)
     description = models.TextField(blank=False, null=False)
     the_year = models.CharField(max_length=50, blank=False, null=False)
+    link = models.CharField(max_length=750, blank=True, null=True)
 
     def __str__(self):
         return self.title
